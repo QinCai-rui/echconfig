@@ -1,4 +1,3 @@
 name = "echconfig"
-main = "src/index.py"
+main = "src/index.js"
 compatibility_date = "2026-08-20"
-compatibility_flags = ["python_workers"]
