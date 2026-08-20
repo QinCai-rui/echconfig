@@ -10,7 +10,7 @@ const HOST_RE = /^(?=.{1,253}$)([a-z0-9-]{1,63}\.)+[a-z0-9-]{1,63}$/i;
 function normalizeB64(value) {
   value = value.trim().replace(/=+$/, "");
   value = value.replace(/-/g, "+").replace(/_/g, "/");
-  return value + "=".repeat(-value.length % 4);
+  return value + "=".repeat((4 - (value.length % 4)) % 4);
 }
 
 function extractEch(payload) {
