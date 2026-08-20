@@ -1,0 +1,4 @@
+name = "echconfig-worker"
+main = "src/index.py"
+compatibility_date = "2026-08-20"
+compatibility_flags = ["python_workers"]
